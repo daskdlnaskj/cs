@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ec0606, #304352);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+#story {
+    margin: 20px auto;
+    width: 80%;
+    height: 300px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff7f50;
+    color: #FFD700;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #ff6347;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+audio {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* 添加样式以美化玩家信息显示 */
+#playerInfo,
+#gameHistory {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    /* 根据背景调整颜色 */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻宝之旅</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>寻宝之旅</h1>
+    <div id="playerInfo"></div>
+    <div id="gameHistory"></div>
+    <div id="libraryInfo">Loading library information...</div>
+    <div id="guardInfo">Loading guard information...</div>
+    <div id="story"></div>
+    <button onclick="startAdventure()">开始寻宝</button>
+    <button onclick="playMusic()">播放音乐</button>
+  </div>
+  <script src="script.js"></script>
+  <!-- 添加音乐播放器 -->
+  <audio id="backgroundMusic" loop>
+    <source src="music/background-music.mp3" type="audio/mpeg">
+    您的浏览器不支持 audio 元素。
+  </audio>
+
+  <script>
+    // 控制音乐播放
+    function playMusic() {
+      var music = document.getElementById('backgroundMusic');
+      music.play();
+    }
+  </script>
+</body>
+
+</html>
